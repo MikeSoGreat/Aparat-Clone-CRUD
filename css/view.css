@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    position: relative;
+    margin-top: 20px;
+    background-color: rgb(235, 235, 235);
+}
+
+.container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    /* border: solid 5px rgb(255, 75, 75); */
+    border: solid 30px transparent;
+    border-image: url(../icons/stripe-film.png) 25% round;
+    border-radius: 5px;
+    margin-top: 200px;
+    background-color: white;
+}
+
+.container table tbody, tr, th, td {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.container table tbody th {
+    color: #ac0b18;
+}
+
+.container table tbody img {
+    width: 300px;
+}
+
+/* Media Optimization */
+
+/* @media all and (min-width: 768px) and (max-width: 1280px) {
+
+} */
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .container {
+        scale: 0.9;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .container {
+        scale: 0.8;
+    }
+}

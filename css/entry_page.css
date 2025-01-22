@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(218, 218, 218);
+}
+
+.main-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.guest {
+    background-color: #ff226c;
+    color: white;
+}
+
+.admin {
+    background-color: aqua;
+    color: white;
+}
+
+.space {
+    direction: ltr;
+    display: flex;
+    gap: 30px;
+}
+
+.logo {
+    width: 30rem;
+    margin-bottom: 30px;
+    margin-top: -50px;
+}

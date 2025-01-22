@@ -1,0 +1,335 @@
+.vid-grid-music,
+.vid-grid-sport,
+.vid-grid-top,
+.vid-grid-suggest {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    column-gap: 30px;
+    margin-right: 260px;
+    position: relative;
+    padding-top: 120px;
+    margin-left: 30px;
+    justify-items: center;
+    /* border: solid 1px red; */
+}
+
+.vid-grid-music,
+.vid-grid-sport,
+.vid-grid-suggest {
+    padding-top: 70px;
+}
+
+.vid-grid-suggest .special {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.973);
+    top: 28px;
+    right: -10px;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.vid-grid-music .special {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.973);
+    top: 28px;
+    right: -10px;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.vid-grid-music p a {
+    color: rgba(0, 0, 0, 0.973);
+}
+
+.vid-grid-sport .special {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.973);
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.8;
+    right: -10px;
+    top: 28px;
+}
+
+.vid-grid-sport p a {
+    color: rgba(0, 0, 0, 0.973);
+}
+
+.vid-grid-top .special {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.973);
+    right: -10px;
+    top: 80px;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.vid {
+    position: relative;
+    width: 262px;
+    font-size: 13px;
+    line-height: 21.672px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    height: 250px;
+}
+
+.dropdown img {
+    width: 50px;
+}
+
+.dropdown {
+    height: 50px;
+    width: 50px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: rgba(51, 133, 255, 0.9);
+    position: absolute;
+    left: 0;
+    transition: all 1s ease;
+}
+
+.dropdown:hover {
+    padding-right: 212px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.dropdown .contents {
+    display: none;
+    position: absolute;
+}
+
+.dropdown:hover .contents {
+    display: flex;
+    position: absolute;
+    left: 50px;
+    top: 0px;
+}
+
+.dropdown:hover .contents .btn {
+    color: black;
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 3px;
+    width: 40px;
+    padding: 2px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.dropdown .contents .delete {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    position: relative;
+}
+
+.dropdown .contents .update {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    position: relative;
+}
+
+.dropdown .contents .view {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    position: relative;
+}
+
+
+
+.dropdown:hover .contents .btn-delete:hover::after {
+    content: "حذف ویدیو";
+
+}
+
+.dropdown:hover .contents .btn-update:hover::after {
+    content: "به روزرسانی محتوا";
+
+}
+
+.dropdown:hover .contents .btn-view:hover::after {
+    content: "نمایش تمام داده ها";
+    text-wrap: nowrap;
+}
+
+.dropdown:hover .contents .btn-delete:hover::after,
+.dropdown:hover .contents .btn-update:hover::after,
+.dropdown:hover .contents .btn-view:hover::after {
+    bottom: -30px;
+    font-size: 0.7rem;
+    padding: 0px 5px;
+    background-color: lightgrey;
+    border-radius: 2px;
+    position: absolute;
+}
+
+.dropdown:hover .contents .btn-delete {
+    background-color: rgba(255, 0, 0, 0.7);
+    border: none;
+    height: 93%;
+    width: 43px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.dropdown:hover .contents .btn-update {
+    background-color: rgba(0, 255, 0, 0.7);
+    transition: 0.15s;
+}
+
+.dropdown:hover .contents .btn-view {
+    background-color: rgba(138, 138, 138, 0.9);
+    transition: 0.15s;
+}
+
+.vid .title {
+    color: rgb(85, 84, 84);
+    cursor: pointer;
+    width: 237px;
+    margin-bottom: 2px;
+}
+
+.vid .title:hover {
+    opacity: 0.8;
+}
+
+.vid .pic {
+    width: 262px;
+    cursor: pointer;
+}
+
+.vid .name,
+.info {
+    color: grey;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.vid .name {
+    display: flex;
+    align-items: center;
+}
+
+.vid .tick {
+    width: 12px;
+    margin-right: 5px;
+}
+
+.vid .pic-div {
+    position: relative;
+}
+
+.vid .pic-div .time {
+    border-radius: 3px;
+    font-size: 11px;
+    position: absolute;
+    left: 5px;
+    bottom: 15px;
+    padding: 1px 3px 0px 3px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.line {
+    position: absolute;
+    right: 0;
+    left: 0;
+    border: solid 1px rgb(245, 245, 249);
+    bottom: -15px;
+}
+
+/* Media Optimization */
+
+@media all and (min-width: 768px) and (max-width: 1280px) {
+
+    .vid-grid-music,
+    .vid-grid-sport,
+    .vid-grid-top,
+    .vid-grid-suggest {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .vid-grid-suggest .special,
+    .vid-grid-music .special,
+    .vid-grid-sport .special,
+    .vid-grid-top .special {
+        margin-right: 15px;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+
+    .vid-grid-music,
+    .vid-grid-sport,
+    .vid-grid-top,
+    .vid-grid-suggest {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .vid-grid-suggest .special,
+    .vid-grid-music .special,
+    .vid-grid-sport .special,
+    .vid-grid-top .special {
+        margin-right: 15px;
+    }
+}
+
+@media all and (max-width: 480px) {
+
+    .vid-grid-music,
+    .vid-grid-sport,
+    .vid-grid-top,
+    .vid-grid-suggest {
+        margin-right: 0;
+        margin-left: 0;
+        row-gap: 20px;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+    }
+
+    .vid-grid-suggest .special,
+    .vid-grid-music .special,
+    .vid-grid-sport .special,
+    .vid-grid-top .special {
+        margin-right: 15px;
+    }
+
+    .vid {
+        width: 320px;
+        font-size: 13px;
+        line-height: 21.672px;
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+
+    .vid .pic {
+        width: 320px;
+    }
+
+    .vid .title {
+        width: 290px;
+    }
+
+    .dropdown:hover {
+        padding-right: 270px;
+    }
+
+    .dropdown:hover .contents .btn {
+        margin-right: 40px;
+    }
+}
